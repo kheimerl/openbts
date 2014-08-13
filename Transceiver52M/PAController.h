@@ -56,7 +56,9 @@ public:
     void on(string reason);
     void off(string reason);
     bool state();
-    
+    void enableFTDIChip();
+    int testFTDIIOPins();
+
 private:
     xmlrpc_c::registry* registry;
     xmlrpc_c::serverAbyss* RPCServer;
